@@ -59,8 +59,10 @@ iframe {
 }
 
 .cardContainer {
-  /* border: solid 1px red; */
+  border: solid 1px red;
   width: 90vw;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 .cardimage {
   border: solid 1px blue;
@@ -80,15 +82,28 @@ iframe {
 }
 
 .cardInfo {
-  /* border: solid 1px orange; */
+  border: solid 1px orange;
 }
 
+.cardButton {
+  background-color: var(--color-primary);
+}
+
+.cardButton:hover {
+  background-color: var(--color-secondary);
+}
 @media screen and (min-width: 600px) {
   .cardimage {
+    background-size: contain;
     justify-content: flex-end;
     align-items: flex-start;
   }
   .timeStamp {
     margin-right: 5vw;
+  }
+  .cardContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 }
