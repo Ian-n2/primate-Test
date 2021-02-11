@@ -51,17 +51,36 @@ iframe {
 
 /* your styles here */
 
-.cardimage {
-  width: 400px;
-  height: 400px;
-  background-image: url("https://source.unsplash.com/random");
+.holder {
+  border: solid 2px green;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  align-items: center;
+}
+
+.cardContainer {
+  border: solid 1px red;
+  width: 90vw;
+  margin-top: 10px;
+}
+.cardimage {
+  border: solid 1px blue;
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
+  height: 40vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .timeStamp {
   background-color: var(--color-secondary);
+  display: relative;
   width: 30vw;
   margin-left: 5vw;
+  position: absolute;
+}
+
+.cardInfo {
+  border: solid 1px orange;
 }
