@@ -50,3 +50,18 @@ iframe {
 }
 
 /* your styles here */
+
+.cardimage {
+  width: 400px;
+  height: 400px;
+  background-image: url("https://source.unsplash.com/random");
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.timeStamp {
+  background-color: var(--color-secondary);
+  width: 30vw;
+  margin-left: 5vw;
+}
