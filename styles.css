@@ -7,7 +7,6 @@
 
 body {
   background: var(--color-secondary, white);
-
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -54,21 +53,23 @@ iframe {
 .holder {
   /* border: solid 2px green; */
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .cardContainer {
-  border: solid 1px red;
+  border: solid 5px red;
+  margin-left: 2em;
   width: 90vw;
-  justify-content: flex-start;
-  align-items: flex-end;
+  height: 60vh;
+  display: block;
+  align-items: center;
 }
 .cardimage {
-  border: solid 1px blue;
-  background-image: url("https://source.unsplash.com/random");
-  background-size: cover;
-  height: 40vw;
+  border: solid 5px blue;
+  height: fit-content;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -79,20 +80,48 @@ iframe {
   display: relative;
   margin-left: 5vw;
   position: absolute;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.imageHandler {
+  margin-left: 5em;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 70vw;
+  height: 30vh;
 }
 
 .cardInfo {
   border: solid 1px orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30vh;
+}
+.cardTitle {
+  font-size: 30;
+}
+.info {
+  font-size: 20;
 }
 
 .cardButton {
+  color: white;
   background-color: var(--color-primary);
+  width: 10em;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 .cardButton:hover {
-  background-color: var(--color-secondary);
+  background-color: lightblue;
 }
-@media screen and (min-width: 600px) {
+/* @media screen and (min-width: 375px) {
   .cardimage {
     background-size: contain;
     justify-content: flex-end;
@@ -106,4 +135,4 @@ iframe {
     justify-content: flex-end;
     align-items: flex-start;
   }
-}
+} */
