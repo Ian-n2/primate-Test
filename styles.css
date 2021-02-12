@@ -103,29 +103,34 @@ iframe {
   flex-basis: auto;
 }
 .cardTitle {
-  font-size: 30;
+  font-size: 50;
 }
 .info {
-  font-size: 20;
+  font-size: 30;
 }
 
 .cardButton {
   color: white;
+  font-size: 30;
   background-color: var(--color-primary);
   width: 10em;
   border-radius: 5px;
   padding: 2px;
 }
+.cardButton svg {
+  fill: white;
+}
 
 .cardButton:hover {
   background-color: lightblue;
 }
-@media screen and (min-width: 400px) {
+/* @media only screen and (min-width: 400px) {
   .cardimage {
     background-size: contain;
     justify-content: flex-end;
     align-items: flex-start;
   }
+
   .timeStamp {
     margin-right: 5vw;
   }
@@ -148,4 +153,4 @@ iframe {
     align-items: center;
     justify-content: center;
   }
-}
+} */
