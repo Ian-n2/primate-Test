@@ -58,15 +58,14 @@ iframe {
 }
 
 .cardContainer {
-  border: solid 5px red;
   display: block;
   margin-left: auto;
   margin-right: auto;
   content: conatin;
+  margin-top: 2%;
 }
 
 .imageHandler {
-  border: solid blue 5px;
   position: relative;
 }
 .image {
@@ -86,7 +85,6 @@ iframe {
 }
 
 .cardInfo {
-  border: solid 1px orange;
   display: block;
   justify-content: space-between;
   contain: content;
@@ -122,7 +120,6 @@ p {
 
 @media screen and (min-device-width: 414px) {
   .holder {
-    border: black solid 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -136,7 +133,6 @@ p {
 
 @media only screen and (min-device-width: 1024px) {
   .holder {
-    border: black solid 5px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -153,7 +149,6 @@ p {
   }
 
   .cardInfo {
-    border: solid 1px orange;
     display: block;
     contain: content;
     height: 59vh;
@@ -217,7 +212,6 @@ p {
   }
 
   .cardInfo {
-    border: solid 1px orange;
     display: block;
     justify-content: space-between;
     contain: content;
