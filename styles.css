@@ -51,64 +51,59 @@ iframe {
 /* your styles here */
 
 .holder {
-  /* border: solid 2px green; */
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
 }
 
 .cardContainer {
   border: solid 5px red;
-  height: 100vh;
   display: block;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  content: conatin;
 }
-.cardimage {
-  border: solid 5px blue;
-  height: fit-content;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+
+.imageHandler {
+  border: solid blue 5px;
+  position: relative;
+}
+.image {
+  width: 100%;
 }
 
 .timeStamp {
   background-color: var(--color-secondary);
-  display: relative;
-  margin-left: 5vw;
-  position: absolute;
-  border-radius: 5px;
-  padding: 2px;
-}
-
-.imageHandler {
-  margin-left: 5em;
-  height: 40vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.image {
-  width: 70vw;
-  height: 40vh;
+  justify-content: flex-start;
+  position: absolute;
+  font-size: 30;
+  border-radius: 5px;
+  bottom: 1em;
+  margin-left: 1em;
+  content: contain;
 }
 
 .cardInfo {
   border: solid 1px orange;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: block;
+  justify-content: space-between;
+  contain: content;
+  overflow: scroll;
   height: 50vh;
-  flex-basis: auto;
-}
-.cardTitle {
-  font-size: 50;
-}
-.info {
-  font-size: 30;
+  width: 100%;
 }
 
+.article {
+  overflow: scroll;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
 .cardButton {
   color: white;
   font-size: 30;
@@ -124,33 +119,116 @@ iframe {
 .cardButton:hover {
   background-color: lightblue;
 }
-/* @media only screen and (min-width: 400px) {
-  .cardimage {
-    background-size: contain;
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
 
-  .timeStamp {
-    margin-right: 5vw;
+@media screen and (min-device-width: 414px) {
+  .holder {
+    border: black solid 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: scroll;
+    align-items: center;
+  }
+  .cardContainer {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .holder {
+    border: black solid 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+    align-items: center;
   }
   .cardContainer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 50vh;
+    justify-content: space-around;
+    height: 60vh;
+    width: 80vw;
   }
-  .image {
-    width: 35vw;
-  }
+
   .cardInfo {
-    height: 40vh;
+    border: solid 1px orange;
+    display: block;
+    contain: content;
+    height: 59vh;
+    width: 30wv;
+  }
+
+  .timeStamp {
+    justify-content: flex-end;
+    top: 1em;
+    bottom: 16rem;
+    margin-left: 18rem;
   }
   .imageHandler {
-    margin-left: 5em;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 2rem;
+    height: 50vh;
   }
-} */
+
+  image {
+    width: 45vw;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 1366px) {
+  .holder {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: scroll;
+    align-items: center;
+    height: 100%;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    height: 35vh;
+    width: 45vw;
+    content: contain;
+  }
+
+  .imageHandler {
+    contain: content;
+    margin-top: 0rem;
+    height: 35vh;
+    width: 26vw;
+  }
+
+  .image {
+    height: 35vh;
+    width: 26vw;
+  }
+  .timeStamp {
+    margin-bottom: 40%;
+    margin-right: 5%;
+    font-size: 15;
+  }
+
+  .cardInfo {
+    border: solid 1px orange;
+    display: block;
+    justify-content: space-between;
+    contain: content;
+    height: 35vh;
+    width: 40%;
+  }
+
+  .article {
+    height: 70%;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
